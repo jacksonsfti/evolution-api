@@ -6,8 +6,8 @@ services:
     restart: always
     ports:
       - "8080:8080"
-    env_file:
-      - .env
+    environment:
+    AUTHENTICATION_API_KEY=0417bf43b0a8969bd6685bcb49d783df
     volumes:
       - evolution_store:/evolution/store
       - evolution_instances:/evolution/instances
